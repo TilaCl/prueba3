@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,33 +9,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href='{% static "core/style.css" %}' >
 </head>
 <body>
     <header>
       <div class="logo">
         <img id="huella" src="img/huella.png" alt="">
-        <a href="index.html" id="mascotitas">Mascotitas</a>
+        <a href="index" id="mascotitas">Mascotitas</a>
       </div>
         <nav>
           <a href="#" class="nav-links">Login</a>
-          <a href="registro.html" class="nav-links">Registrarse</a>
-          <a href="carrito.html"><span id="carrito" class="material-icons">&#xe8cc</span></a>
+          <a href="registro" class="nav-links">Registrarse</a>
+          <a href="carrito"><span id="carrito" class="material-icons">&#xe8cc</span></a>
         </nav>
     </header>
     
     <div class="nav-2">
       <div id="inicio">
-        <a href="index.html">Inicio</a>
+        <a href="home">Inicio</a>
       </div>
       <div id="comprar">
-        <a href="comprar.html">Comprar</a>  
+        <a href="comprar">Comprar</a>  
       </div>
       <div id="perros">
-        <a href="perros.html">Perros</a>
+        <a href="perros">Perros</a>
       </div>
       <div id="gatos">
-        <a href="gatos.html">Gatos</a>
+        <a href="gatos">Gatos</a>
       </div>
     </div>
     </header><br>
@@ -45,8 +46,8 @@
       <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
       <input type="checkbox" value="remember-me"> Recuerdame
       <input class="botons" type="submit" value="Ingresar">
-      <p><a href="registro.html" id="olvidocuenta">¿No tienes cuenta?</a></p>
-      <p><a href="reestablecer.html" id="reestablecer">¿Olvidaste tu clave?</a></p>
+      <p><a href="registro" id="olvidocuenta">¿No tienes cuenta?</a></p>
+      <p><a href="reestablecer" id="reestablecer">¿Olvidaste tu clave?</a></p>
     </section>
     </form>
     <br><br><br><br><br><br><br><br>
@@ -54,8 +55,8 @@
       <div class="container"> 
           <div class="col">
             <div id="links">
-              <a href="sobrenosotros.html">Sobre Nosotros.</a><br>
-              <a href="ubicanos.html">¡Ubícanos!</a>
+              <a href="sobrenosotros">Sobre Nosotros.</a><br>
+              <a href="ubicanos">¡Ubícanos!</a>
             </div>       
           </div>
           <div class="col">
