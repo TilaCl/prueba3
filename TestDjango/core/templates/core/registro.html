@@ -1,0 +1,193 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href='{% static "core/style.css" %}'>
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <img id="huella" src="img/huella.png" alt="">
+        <a href="index.html" id="mascotitas">Mascotitas</a>
+      </div>
+          <nav>
+            <a href="login.html" class="nav-links">Login</a>
+            <a href="#" class="nav-links">Registrarse</a>
+            <a href="carrito.html"><span id="carrito" class="material-icons">&#xe8cc</span></a>
+          </nav>
+      </header>
+      <div class="nav-2">
+        <div id="inicio">
+          <a href="index.html">Inicio</a>
+        </div>
+        <div id="comprar">
+          <a href="comprar.html">Comprar</a>  
+        </div>
+        <div id="perros">
+          <a href="perros.html">Perros</a>
+        </div>
+        <div id="gatos">
+          <a href="gatos.html">Gatos</a>
+        </div>
+      </div>
+    </header>
+    <!-------------- formulario nuevo ------------------------------------------------------------------------------------------------------------------------>
+    <main>
+      <h4 style="text-align: center; font-weight: 700; font-size: 35px; margin-top: -1.5cm;" >Registro </h4>
+      <br>
+      <form action="" class="formulario" id="formulario">
+        
+        <!--  Usuario -->
+        <div class="formulario__grupo" id="grupo__usuario">
+          <label for="usuario" class="formulario__label">Usuario</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Nombre de usuario">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener n&uacute;meros, letras y gui&oacute;n bajo.</p>
+        </div>
+  
+        <!--  Nombre -->
+        <div class="formulario__grupo" id="grupo__nombre">
+          <label for="nombre" class="formulario__label">Nombre</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Su nombre completo">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El nombre debe tener m&aacute;s de 4 digitos.</p>
+        </div>
+  
+        <!--  Contraseña -->
+        <div class="formulario__grupo" id="grupo__password">
+          <label for="password" class="formulario__label">Contraseña</label>
+          <div class="formulario__grupo-input">
+            <input type="password" class="formulario__input" name="password" id="password">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">La contraseña debe tener de 4 a 12 dígitos.</p>
+        </div>
+  
+        <!--  Contraseña 2 -->
+        <div class="formulario__grupo" id="grupo__password2">
+          <label for="password2" class="formulario__label">Repetir Contraseña</label>
+          <div class="formulario__grupo-input">
+            <input type="password" class="formulario__input" name="password2" id="password2">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Las contraseñas no coinciden.</p>
+        </div>
+  
+        <!--  Correo Electronico -->
+        <div class="formulario__grupo" id="grupo__correo">
+          <label for="correo" class="formulario__label">Correo electr&oacute;nico</label>
+          <div class="formulario__grupo-input">
+            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Correo electr&oacute;nico">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El correo solo puede contener letras, n&uacute;meros, puntos, guiones y gui&oacute;n bajo.</p>
+        </div>
+  
+        <!--  Teléfono -->
+        <div class="formulario__grupo" id="grupo__telefono">
+          <label for="telefono" class="formulario__label">Tel&eacute;fono</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Su numero de tel&eacute;fono ">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El tel&eacute;fono solo puede contener n&uacute;meros y el m&aacute;ximo son 14 d&iacute;gitos.</p>
+        </div>
+        <div>
+          <input type="radio" name="gender" value="male" checked> Hombre<br>
+          <input type="radio" name="gender" value="female"> Mujer<br>
+        <input type="radio" name="gender" value="other"> Otro <br>
+        </div>
+  
+        <!--  Terminos y Condiciones -->
+        <div class="formulario__grupo" id="grupo__terminos">
+          <label class="formulario__label">
+            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+            Acepto los t&eacute;rminos y condiciones
+          </label>
+        </div>
+  
+        <div class="formulario__mensaje" id="formulario__mensaje">
+          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor, rellena el registro correctamente. </p>
+        </div><br>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+          <label class="form-check-label" for="flexSwitchCheckDefault">Deseo recibir información al correo.</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" >
+          <label class="form-check-label" for="flexSwitchCheckChecked">Soy mayor de 18 años.</label>
+        </div>
+  
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <button type="submit" class="formulario__btn" style="background-color:#24128e; color: #ffffff;">Registrar </button><br>
+          <button type="reset" class="formulario__btn" style="background-color:#24128e; color: #ffffff;">Limpiar </button>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Registro enviado correctamente</p> <br>
+          <p><a href="login.html" style="text-decoration: none; color:rgb(255, 255, 255); font-weight: 600;">¿Ya tienes Cuenta?</a></p>
+        </div>
+      </form>
+      
+    </main><br><br><br>
+    <!---------------------------- fin formulario nuevo ---------------------------------------------------------------------------------------------------------->
+    
+    <!-- FORMULARIO ANTIGUO DESACTIVADO ----------------
+    <form action="/my-handling-form-page" method="post">
+    <section class="form-registro">
+      <h4>Registro</h4>
+      <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+      <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+      <input class="controls" type="email" name="correo" id="correos" placeholder="Ingrese su Correo">
+      <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
+      <input type="checkbox"><a href="#"> Terminos y Condiciones</a></p>
+      <input class="botons" type="submit" value="Registrar">
+      <p><a href="login.html">¿Ya tienes Cuenta?</a></p>
+    </section>
+    </form>
+    
+  -->
+ 
+    <footer>
+      <div class="container"> 
+          <div class="col">
+            <div id="links">
+              <a href="sobrenosotros.html">Sobre Nosotros.</a><br>
+              <a href="ubicanos.html">¡Ubícanos!</a>
+           </div>       
+          </div>
+          <div class="col">
+              <img id="insta" src="img/insta.png" alt="" style="height: 40px; padding-right: 10px; position: relative; bottom: 25px; right: -30px; float: right;">
+              <img id="face" src="img/face.png" alt="" style="height: 40px; padding-right: 5px; position: relative; bottom: 25px; right: -22px; float: right;">
+              <img id="twitter" src="img/twitter.png" alt="" style="height: 40px; padding-right: 5px; position: relative; bottom: 25px; right: -20px; float: right;">
+            <div id="copy">
+              &copy;Romina,Manuel,Felipe.
+            </div> 
+          </div>        
+          </div>
+        </div>
+    </footer>
+    <script>
+      var present = document.getElementById("copy");
+    function cambiarn (){
+        present.innerHTML = "<h4 style= 'color: rgb(225, 192, 46)';>Creadores de Proyecto</h4>";
+    }
+    function cambiarn1(){
+      present.innerHTML = "&copy;Romina,Manuel,Felipe.";
+    }
+    present.onmouseover = cambiarn;
+    present.onmouseout = cambiarn1;
+    </script>
+    <!-- Script de validaciones de formularios, revisar carpeta 'js' -->
+    <script src="js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
