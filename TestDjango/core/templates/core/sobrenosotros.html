@@ -16,7 +16,7 @@
 <body>
   <header>
       <div class="logo">
-          <img id="huella" src="img/huella.png" alt="">
+          <img id="huella" src="{% static 'core/img/huella.png' %}" alt="">
           <a href="home" id="mascotitas" >Mascotitas</a>
       </div>
       <nav>
@@ -45,7 +45,7 @@
   <h3 style="font-family: 'Gochi Hand', cursive; text-align: center; margin-bottom: 20px; color: #4b1767;">
 Desde Mascotitas apoyamos y colaboramos orgánicamente y de forma activa con fundaciones de rescate y adopción animal, es por esto que donamos un porcentaje de nuestras ventas mensualmente a estas causas. Para nosotros es primordial la integridad y bienestar de las mascotas.
   </h3> <br>
-  <div align="center"><img src="img/fundaciones.png"></div>
+  <div align="center"><img src="{% static 'core/img/fundaciones.png' %}"></div>
   
   <h3 style="font-family: 'Gochi Hand', cursive; text-align: center; margin-bottom: 20px; color: #4b1767;">
 
@@ -66,9 +66,9 @@ Desde Mascotitas apoyamos y colaboramos orgánicamente y de forma activa con fun
          </div>       
         </div>
         <div class="col">
-            <img id="insta" src="img/insta.png" alt="" style="height: 40px; padding-right: 10px; position: relative; bottom: 25px; right: -30px; float: right;">
-            <img id="face" src="img/face.png" alt="" style="height: 40px; padding-right: 5px; position: relative; bottom: 25px; right: -22px; float: right;">
-            <img id="twitter" src="img/twitter.png" alt="" style="height: 40px; padding-right: 5px; position: relative; bottom: 25px; right: -20px; float: right;">
+          <a href="https://instagram.com"><img id="insta" src="{% static 'core/img/insta.png' %}" alt="" style="height: 40px; padding-right: 10px; position: relative; bottom: 25px; right: -30px; float: right;"></a> 
+          <a href="https://facebook.com"><img id="face" src="{% static 'core/img/face.png' %}" alt="" style="height: 40px; padding-right: 5px; position: relative; bottom: 25px; right: -22px; float: right;"></a>
+          <a href="https://twitter.com"><img id="twitter" src="{% static 'core/img/twitter.png' %}" alt="" style="height: 40px; padding-right: 5px; position: relative; bottom: 25px; right: -20px; float: right;"></a>
           <div id="copy">
             &copy;Romina,Manuel,Felipe.
           </div> 
