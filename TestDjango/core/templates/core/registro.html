@@ -117,9 +117,7 @@
           </label>
         </div>
   
-        <div class="formulario__mensaje" id="formulario__mensaje">
-          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor, rellena el registro correctamente. </p>
-        </div><br>
+        <br>
         <div class="form-check form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
           <label class="form-check-label" for="flexSwitchCheckDefault">Deseo recibir información al correo.</label>
@@ -187,7 +185,7 @@
     present.onmouseout = cambiarn1;
     </script>
     <!-- Script de validaciones de formularios, revisar carpeta 'js' -->
-    <script src="js/formulario.js"></script>
+    <script src="{% static 'core/js/formulario.js' %}"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
